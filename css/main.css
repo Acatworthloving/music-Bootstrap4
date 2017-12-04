@@ -351,7 +351,7 @@ i{
 .footer .list-group{
   padding: 2.125em 0;
 }
-@media (min-width: 375px){  
+@media (min-width: 320px){  
   .top-itunes{
     float: left;
   }
