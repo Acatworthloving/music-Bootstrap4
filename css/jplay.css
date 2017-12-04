@@ -1,0 +1,122 @@
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+*{ margin:0; padding:0; list-style:none;}
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	min-height: 100%;
+}
+.music-player{
+	background-color: #f0f0f0;
+}
+.music-player img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	z-index: -1;
+	display: block;
+	width: 100% !important;
+	height: 100% !important;
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
+}
+.music-player .progress, .music-player .volume-level {
+	width: 60%;
+	display: block;
+	cursor: pointer;
+  	background-color: rgb(255, 255, 255);
+  	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.196);
+  	height: 1px;
+}
+
+.music-player .progress span, .music-player .volume-level span {
+	position: relative;
+	display: block;
+	width: 0%;
+	height: 1px;
+  	background-color: rgb(255, 255, 255);
+  	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.118);
+}
+.music-player .progress span:after, .music-player .volume-level span:after {
+	position: absolute;
+	right: -5px;
+	top: -8px;
+	content: "";
+	border-radius: 50%;
+  	background-color: rgb(255, 255, 255);
+  	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.137);
+  	position: absolute;
+  	width: 15px;
+  	height: 15px;
+}
+.music-player .controls .volume-level span:after {
+	right: -11px;
+	top: -8px;
+	border-radius: 50%;
+  	background-color: rgb(255, 255, 255);
+  	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.137);
+  	position: absolute;
+  	width: 15px;
+  	height: 15px;
+}
+.music-player .controls .play-controls a {
+	display: inline-block;
+	width: 35px;
+	height: 40px;
+	margin: 0 30px;
+}
+.music-player .controls .volume-level {
+	position: relative;
+	bottom: auto;
+	width: 200px;
+	height: 2px;
+	margin: 30px auto 0;
+	background: rgba(225, 225, 225, 0.3);
+}
+.music-player .controls .volume-level span {
+	height: 2px;
+}
+.music-player .controls .volume-level a {
+	position: absolute;
+	right: -32px;
+	top: -8px;
+	width: 22px;
+}
+.music-player .controls .volume-level a.icon-volume-down {
+	right: auto;
+	left: -25px;
+}
+ [class^="icon-"] {
+ width: 18px;
+ height: 18px;
+ background: url("../images/E09T8tf.png") no-repeat center;
+ display: block;
+}
+.icon-share {
+	background-image: url("../images/PGIC6ME.png");
+}
+.icon-previous {
+	background-image: url("../images/LIqj0nr.png");
+}
+.icon-play {
+	background-image: url("../images/xlBv5aR.png");
+}
+.icon-pause {
+	background-image: url("../images/lIhwduj.png");
+}
+.icon-next {
+	background-image: url("../images/Mb6Nzj5.png");
+}
+.icon-volume-up {
+	background-image: url("../images/qqdoddi.png");
+}
+.icon-volume-down {
+	background-image: url("../images/3iirf2f.png");
+}
+.jp-jplayer{
+	height: 0;
+	width: 0;
+}

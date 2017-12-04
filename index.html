@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>MUSIC</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- 移动设备优先 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 自己写的css样式 -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="js/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+<body>
+<div class="container-fluid">
+    <div class="top">
+        <div class="top-header">
+            <div class="row">
+                <div class="col-6">
+                    <img src="img/logo-music.png" class="img-fluid logo-music">
+                    <span class="heading">PodStar</span>
+                </div>
+                <div class="col-6 top-header-right">
+                    <img src="img/menu.png" class="img-fluid right">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7 col-sm-12">
+                <ul class="list-group">
+                    <li class="list-group-item top-title">
+                        <span id="title"></span>
+                        <span class="badges"></span>
+                    </li>
+                    <li class="list-group-item top-subtitle">
+                        <span id="subtitle" class="s-fc"></span>
+                    </li>
+                    <li class="list-group-item time">
+                        <span id="date"></span>
+                        <i class="icon-time fa-2x"></i>
+                        <span id="time"></span>
+                        <span id="heart"></span><i class="icon-heart fa-2x"></i>
+                        <span id="comment"></span><i class="icon-comment fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-5 col-sm-12 top-base">
+                <div class="row top-itunes">
+                    <div class="col-4 top-itunes-logo">
+                        <img src="img/logo-circles.png" class="img-fluid">
+                    </div>
+                    <ul class="list-group col-8">
+                        <li class="list-group-item">
+                            <span class="top-itunes-subtitle">available on</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="top-itunes-title s-fc">iTunes Podcasts</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="latest card">
+        <div class="card-header">
+            <span>Latest on PodStar</span>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md col-sm-12 first">
+                    <div class="latest-img">
+                        <img src="img/list-img1.png" class="img-fluid">
+                        <div class="latest-triangle bdc-red"></div>
+                    </div>
+                    <div class="comment s-fc">
+                        <span id="latest_heart1"></span><i class="icon-heart fa-2x"></i>
+                        <span id="latest_comment1"></span><i class="icon-comment fa-2x"></i>
+                    </div>
+                    <div class="latest-details bgc-red">
+                        <ul class="list-group latest-introduce">
+                            <li class="list-group-item latest-title">
+                                <span id="latest_title1"></span>
+                            </li>
+                            <li class="list-group-item latest-subtitle">
+                                <span id="latest_subtitle1"></span>
+                            </li>
+                            <li class="list-group-item latest-time">
+                                <span id="latest_date1"></span>
+                                <i class="icon-time fa-2x"></i>
+                                <span id="latest_time1"></span>
+                            </li>
+                        </ul>
+                        <div class="row latest-play">
+                            <div class="col-9">
+                                <div class="latest-btn s-fc active" id="latest_btn1" onclick="Change(1)"><span>PLAYING NOW</span></div>
+                            </div>
+                            <div class="col-3">
+                                <img src="img/download.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-sm-12">
+                    <div class="latest-img">
+                        <img src="img/list-img2.png" class="img-fluid">
+                        <div class="latest-triangle bdc-green"></div>
+                    </div>
+                    <div class="comment s-fc">
+                        <span id="latest_heart2"></span><i class="icon-heart fa-2x"></i>
+                        <span id="latest_comment2"></span><i class="icon-comment fa-2x"></i>
+                    </div>
+                    <div class="latest-details bgc-green">
+                        <ul class="list-group latest-introduce">
+                            <li class="list-group-item latest-title">
+                                <span id="latest_title2"></span>
+                            </li>
+                            <li class="list-group-item latest-subtitle">
+                                <span id="latest_subtitle2"></span>
+                            </li>
+                            <li class="list-group-item latest-time">
+                                <span id="latest_date2"></span><i class="icon-time fa-2x"></i>
+                                <span id="latest_time2"></span>
+                            </li>
+                        </ul>
+                        <div class="row latest-play">
+                            <div class="col-9 ">
+                                <div class="latest-btn s-fc" id="latest_btn2" onclick="Change(2)"><span>LISTEN NOW</span></div>
+                            </div>
+                            <div class="col-3">
+                                <img src="img/download.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-sm-12">
+                    <div class="latest-img">
+                        <img src="img/list-img3.png" class="img-fluid">
+                        <div class="latest-triangle bdc-red"></div>
+                    </div>
+                    <div class="comment s-fc">
+                        <span id="latest_heart3"></span><i class="icon-heart fa-2x"></i>
+                        <span id="latest_comment3"></span><i class="icon-comment fa-2x"></i>
+                    </div>
+                    <div class="latest-details bgc-red">
+                        <ul class="list-group latest-introduce">
+                            <li class="list-group-item latest-title">
+                                <span id="latest_title3"></span>
+                            </li>
+                            <li class="list-group-item latest-subtitle">
+                                <span id="latest_subtitle3"></span>
+                            </li>
+                            <li class="list-group-item latest-time">
+                                <span id="latest_date3"></span><i class="icon-time fa-2x"></i>
+                                <span id="latest_time3"></span>
+                            </li>
+                        </ul>
+                        <div class="row latest-play">
+                            <div class="col-9">
+                                <div class="latest-btn s-fc" id="latest_btn3" onclick="Change(3)"><span>LISTEN NOW</span></div>
+                            </div>
+                            <div class="col-3">
+                                <img src="img/download.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md col-sm-12 first">
+                    <div class="latest-img">
+                        <img src="img/list-img4.png" class="img-fluid">
+                        <div class="latest-triangle bdc-blue"></div>
+                    </div>
+                    <div class="comment s-fc">
+                        <span id="latest_heart4"></span><i class="icon-heart fa-2x"></i>
+                        <span id="latest_comment4"></span><i class="icon-comment fa-2x"></i>
+                    </div>
+                    <div class="latest-details bgc-blue">
+                        <ul class="list-group latest-introduce">
+                            <li class="list-group-item latest-title">
+                                <span id="latest_title4"></span>
+                            </li>
+                            <li class="list-group-item latest-subtitle">
+                                <span id="latest_subtitle4"></span>
+                            </li>
+                            <li class="list-group-item latest-time">
+                                <span id="latest_date4"></span>
+                                <i class="icon-time fa-2x"></i>
+                                <span id="latest_time4"></span>
+                            </li>
+                        </ul>
+                        <div class="row latest-play">
+                            <div class="col-9">
+                                <div class="latest-btn s-fc" id="latest_btn4" onclick="Change(4)"><span>LISTEN NOW</span></div>
+                            </div>
+                            <div class="col-3">
+                                <img src="img/download.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-sm-12">
+                    <div class="latest-img">
+                        <img src="img/list-img5.png" class="img-fluid">
+                        <div class="latest-triangle bdc-red"></div>
+                    </div>
+                    <div class="comment s-fc">
+                        <span id="latest_heart5"></span><i class="icon-heart fa-2x"></i>
+                        <span id="latest_comment5"></span><i class="icon-comment fa-2x"></i>
+                    </div>
+                    <div class="latest-details bgc-red">
+                        <ul class="list-group latest-introduce">
+                            <li class="list-group-item latest-title">
+                                <span id="latest_title5"></span>
+                            </li>
+                            <li class="list-group-item latest-subtitle">
+                                <span id="latest_subtitle5"></span>
+                            </li>
+                            <li class="list-group-item latest-time">
+                                <span id="latest_date5"></span>
+                                <i class="icon-time fa-2x"></i>
+                                <span id="latest_time5"></span>
+                            </li>
+                        </ul>
+                        <div class="row latest-play">
+                            <div class="col-9">
+                                <div class="latest-btn s-fc" id="latest_btn5" onclick="Change(5)"><span>LISTEN NOW</span></div>
+                            </div>
+                            <div class="col-3">
+                                <img src="img/download.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-sm-12">
+                    <div class="latest-img">
+                        <img src="img/list-img6.png" class="img-fluid">
+                        <div class="latest-triangle bdc-green"></div>
+                    </div>
+                    <div class="comment s-fc">
+                        <span id="latest_heart6"></span><i class="icon-heart fa-2x"></i>
+                        <span id="latest_comment6"></span><i class="icon-comment fa-2x"></i>
+                    </div>
+                    <div class="latest-details bgc-green">
+                        <ul class="list-group latest-introduce">
+                            <li class="list-group-item latest-title">
+                                <span id="latest_title6"></span>
+                            </li>
+                            <li class="list-group-item latest-subtitle">
+                                <span id="latest_subtitle6"></span>
+                            </li>
+                            <li class="list-group-item latest-time">
+                                <span id="latest_date6"></span>
+                                <i class="icon-time fa-2x"></i>
+                                <span id="latest_time6"></span>
+                            </li>
+                        </ul>
+                        <div class="row latest-play">
+                            <div class="col-9">
+                                <div class="latest-btn s-fc" id="latest_btn6" onclick="Change(6)"><span>LISTEN NOW</span></div>
+                            </div>
+                            <div class="col-3">
+                                <img src="img/download.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="twitter">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- 轮播内容 -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <img src="img/logo-bird.png" class="img-fluid">
+                        </li>
+                        <li class="list-group-item twitter-title">
+                            <span class="fs-bold">Latest #News and useful #Resources from creative community in #PixelBuddhaDigest #2</span>
+                        </li>
+                        <li class="list-group-item twitter-web">
+                            <span class="fs-bold">http://pixelbuddha.net/digest/pixelbuddha-digest-2</span>
+                        </li>
+                        <li class="list-group-item twitter-date">
+                            <span class="fs-bold">@PodStar</span>
+                            <span> 4 days ago</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="carousel-item">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <img src="img/logo-bird2.png" class="img-fluid">
+                        </li>
+                        <li class="list-group-item twitter-title">
+                            <span class="fs-bold">Visual Studio Code is a lightweight but powerful source code editor which runs on your</span>
+                        </li>
+                        <li class="list-group-item twitter-web">
+                            <span class="fs-bold">http://www.runoob.com/try/try.php?filename=trybs4_carousel</span>
+                        </li>
+                        <li class="list-group-item twitter-date">
+                            <span class="fs-bold">@Inter</span>
+                            <span> 3 days ago</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="carousel-item">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <img src="img/logo-bird3.jpg" class="img-fluid">
+                        </li>
+                        <li class="list-group-item twitter-title">
+                            <span class="fs-bold">Node.js and has a rich ecosystem of extensions for other</span>
+                        </li>
+                        <li class="list-group-item twitter-web">
+                            <span class="fs-bold">https://code.visualstudio.com</span>
+                        </li>
+                        <li class="list-group-item twitter-date">
+                            <span class="fs-bold">@Getting</span>
+                            <span> 2 days ago</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 轮播指示符 -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="podcats">
+        <nav class="navbar navbar-expand-sm">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <span class="podcats-title1">PodStar</span>
+                </li>
+                <li class="nav-item">
+                    <span class="podcats-title2">All the Pretty Faces</span>
+                </li>
+                <li class="nav-item">
+                    <span class="podcats-title3">30 Words per Second</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="row podcats-host">
+            <div class="col-md-6 col-sm-12">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="img/mask1.png" class="img-fluid">
+                    </div>
+                    <ul class="col-8 list-group host-title">
+                        <li class="list-group-item"><span class="host-title1">Your host:</span></li>
+                        <li class="list-group-item"><span class="host-title2">Jeremy Clarkson</span></li>
+                        <li class="list-group-item"><span class="host-title3">@JeremyClarkson</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="img/mask2.png" class="img-fluid">
+                    </div>
+                    <ul class="col-8 list-group host-title">
+                        <li class="list-group-item"><span class="host-title1">Your host:</span></li>
+                        <li class="list-group-item"><span class="host-title2">James May</span></li>
+                        <li class="list-group-item"><span class="host-title3">@MrJamesMay</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row pod-rectangle">
+            <div class="col-md col-sm-12"><span>Episodes 1-8</span></div>
+            <div class="col-md col-sm-12"><span>Episodes 9-16</span></div>
+            <div class="col-md col-sm-12 pod-last"><span>Episodes 17-24</span></div>
+        </div>
+        <div class="row pod-rectangle">
+            <div class="col-md col-sm-12"><span>Episodes 25-32</span></div>
+            <div class="col-md col-sm-12"><span>Episodes 33-40</span></div>
+            <div class="col-md col-sm-12 pod-last"><span>Episodes 41-48</span></div>
+        </div>
+        <div class="row pod-rectangle">
+            <div class="col-md col-sm-12"><span>Episodes 49-56</span></div>
+            <div class="col-md col-sm-12"><span>Episodes 57-60</span></div>
+            <div class="col-md col-sm-12 pod-last-empty"><span></span></div>
+        </div>
+    </div>
+    <div class="footer row">
+        <ul class="col-md-5 col-sm-12 list-group">
+            <li class="list-group-item footer-title1"><span>PodStar — podcast star.</span></li>
+            <li class="list-group-item footer-title2"><span>Copyright 2014-2015. All Rights Reserved.</span></li>
+        </ul>
+        <ul class="col-md-7 col-sm-12 list-group">
+            <li class="list-group-item footer-title1"><span>Questions?</span></li>
+            <li class="list-group-item footer-title2"><span>Need help?  Don’t hestiate to ask us somethings. Email us direc <u>info@pixelbuddha</u>.</span></li>
+        </ul>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/index.js"></script>
+</html>

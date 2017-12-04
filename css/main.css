@@ -1,0 +1,392 @@
+.container-fluid {
+  width: 100%;
+  padding: 0;
+  margin:0;
+}
+.col,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-md,.col-md-10, .col-md-11, .col-md-12, .col-md-2, 
+.col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto{
+	padding: 0;
+}
+span{
+	font-family: "FuturaNewBook";
+}
+i{
+	padding: 0 0.4375em;
+}
+.s-fc{
+	color: rgb(255, 255, 255);
+}
+.bgc-red{
+	background-color: rgb(241, 103, 103);
+}
+.bgc-green{
+	background-color: #56b8b9;
+}
+.bgc-blue{
+	background-color: #5baad6;
+}
+.bdc-red{
+  border-bottom: 0.65em solid rgb(241, 103, 103);
+}
+.bdc-green{
+  border-bottom: 0.65em solid #56b8b9;
+}
+.bdc-blue{
+  border-bottom: 0.65em solid #5baad6;
+}
+.navbar{
+  padding:0;
+}
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0; 
+  margin-bottom: 0; 
+  background: none;
+  border:0;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.right{
+	float: right;
+}
+.top{
+	background: url(../img/header.png) no-repeat center;
+	background-size:cover;
+	padding: 0 10%;
+}
+.top .logo-music{
+	padding-right: 1.25em;
+}
+.top-header{
+	line-height: 3.375em;
+	padding: 3.125em 0;
+}
+.top .heading{
+  font-size: 2.25em;
+  color: #e6dfda;
+  text-align: left;
+  position: absolute;
+}
+.top-header-right{
+  text-align: right;
+  margin: auto;
+}
+.top ul li{
+	padding: 1% 0;
+	border: 0;
+	background: none;
+}
+.top #title{
+  font-size: 1.125em;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding-right: 0.625em;
+}
+.top .badges{
+  font-size: 0.875em;  	
+  color: rgba(255, 255, 255, 0.4);
+  text-align: left;
+  position: absolute;
+}
+.top #subtitle{
+  font-size: 2.375em;
+  text-align: left;
+}
+.top .time{
+  font-size: 0.875em;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding-right:  0.625em;
+}
+.top #date,#time{
+  padding-right:0.8125em;
+}
+.top-base{
+	margin: auto;
+	padding: 0;
+}
+.top-itunes{
+	height: 5.3125em;
+	border-radius: 0.5em;
+  background-color: rgba(255, 255, 255, 0.42);
+  width: 17.5em;
+  margin: 2.8125em 0;
+}
+.top-itunes-logo{
+	line-height: 5.3125em;
+	text-align: right;
+	padding-right: 1.3125em;
+}
+.top-itunes-subtitle{
+  font-size: 1.375em;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+}
+.top-itunes-title{
+  font-size: 1.375em;
+  text-align: left;
+}
+.top-itunes ul{
+	margin: 2% 0;
+}
+.latest{
+	padding: 4.5% 10%;
+	border:0;
+}
+.latest .card-header,.card-body{
+	padding: 0;
+	background: none;
+	border: 0;
+}
+.latest .card-header{
+  font-size: 1.875em;
+  color: rgb(46, 42, 40);
+  text-align: left;
+  padding-bottom: 1.2em;
+}
+.latest .comment{
+	text-align: right;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding:0.9375em;
+	font-size: 0.875em;
+}
+.latest img{
+	width: 100%;
+}
+.latest-img{
+  position: relative;
+}
+.latest-details{
+  width: 100%;
+  padding:1.5625em 1.125em;
+  margin-bottom: 1.25em;
+}
+.latest .comment i{
+	color:#d2aa64;
+}
+.latest-triangle{
+  width: 0;
+  height: 0;
+  border-left:  0.65em solid transparent;
+  border-right:  0.65em solid transparent;
+  position: absolute;
+  left: 1.125em;
+  bottom: 0em;
+}
+[id^='latest_title']{
+  font-size: 0.9375em;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+[id^='latest_subtitle']{
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  padding:1.125em 0;
+  display: block;
+}
+[id^='latest_date']{
+  padding-right:0.8125em;
+}
+.latest-time{
+	font-size: 0.875em;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: left;
+}
+.latest-introduce{
+	padding-bottom: 1.3125em;
+	border-bottom: 0.0625em solid rgba(0, 0, 0, 0.059);
+	margin-bottom: 1.3125em;
+}
+.latest-play{
+	height: 2.0625em;
+}
+.latest-play img{
+	height: 100%;
+	width: auto;
+	float: right;
+}
+.latest-btn{
+	height: 100%;
+	font-size: 0.875em;
+  font-family: "Myriad Pro";
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 2.22em;
+  border-radius: 1.25em;
+  border: 0.125em solid rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.059);
+}
+.latest-play .active{
+	border:0;
+	background-color: rgba(17, 17, 17, 0.08);
+}
+.twitter{
+  background: url(../img/twitter-bg.png) no-repeat center;
+  background-size:cover;
+  padding: 2.8125em 10%;
+}
+.twitter ul{
+  text-align: center;
+}
+.twitter img{
+  margin: 2.625em;
+}
+.twitter-title,.twitter-web{
+  font-size: 1.1875em;
+  font-family: "FuturaNewDemi";
+  color: #000;
+  text-align: center;
+}
+.twitter-web span{
+  border-bottom: 0.0625em solid #000;
+}
+.twitter-date{
+  font-size: 0.875em;
+  font-family: "Arial";
+  color: rgb(46, 42, 40);
+  text-align: center;
+  padding:1.125em;
+}
+.carousel-indicators li {
+  width: 0.75em;
+  height: 0.75em;
+  margin:2% 1.125em 0 1.125em;
+  background-color: rgba(129, 129, 130, 0.29);
+  border-radius: 50%;      
+  -moz-border-radius: 50%;      
+  -webkit-border-radius: 50%;
+}
+.carousel-indicators .active {
+  background-color: #bf9147;
+}
+.carousel-indicators{
+  position: static;
+  margin: 0;
+}
+.fs-bold{
+  font-weight: bold;
+}
+.podcats{
+  padding: 4.5% 10%;
+}
+[class^='podcats-title']{
+  font-size: 1.5em;
+  font-family: "FuturaNewDemi";
+  padding-right: 1.875em;
+  display: block;
+  margin:0.625em 0;
+}
+.podcats-title1{
+  color: rgb(241, 103, 103);
+  text-decoration: underline;
+}
+.podcats-title2{
+  color: rgb(86, 184, 185);
+  text-decoration: underline;
+}
+.podcats-title3{
+  color: rgb(91, 170, 214);
+}
+[class^='host-title']{
+  font-family: "FuturaPT";
+}
+.podcats .host-title1{
+  font-size: 1.125em;
+  color: rgb(202, 202, 202);
+}
+.podcats .host-title2{
+  font-size: 1.875em;
+  color: rgb(0, 0, 0);
+}
+.podcats .host-title3{
+  font-size: 1.125em;
+  color: rgb(91, 170, 214);
+}
+.podcats .host-title{
+  margin:auto;
+  padding-left:1.25em;
+}
+.podcats-host{
+  margin:1.625em 0;
+}
+.podcats-host .row{
+  padding:1.875em 0;
+}
+.pod-rectangle .col-md{
+  background-color: rgb(91, 170, 214);
+  font-family: "FuturaPT";
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+  height: 3.125em;
+  margin-bottom:0.83333em;
+  line-height: 3.125em;
+  text-align: center;
+  width: 100%;
+}
+.pod-rectangle .pod-last-empty{
+  background:none;
+}
+.footer{
+  padding: 2.875em 10%;
+  background-color: #2a2a2a;
+  border-top:0.3125em solid #d3a964;
+}
+.footer-title1{
+  font-size: 1.25em;
+  font-family: "FuturaNewDemi";
+  color: rgb(255, 255, 255);
+  margin-bottom: 1em;
+}
+.footer-title2{
+  font-size: 0.9375em;
+  font-family: "FuturaNewBook";
+  color: rgb(214, 214, 214);
+}
+.footer .list-group{
+  padding: 2.125em 0;
+}
+@media (min-width: 375px){  
+  .top-itunes{
+    float: left;
+  }
+  .col-md{
+    padding: 0;
+  }
+  .pod-rectangle .col-md{
+    margin-right:0;
+    padding:0;
+  }
+  .footer .list-group {
+    text-align: center;
+  }
+  .first{
+  padding: 0;
+  margin:0;
+  }
+}  
+@media (min-width: 630px){  
+  .top-itunes{
+    float: right;
+  }
+  .col-md{
+    padding: 0 0 0 1.25em;
+  }
+  .footer .list-group {
+    text-align: left;
+  }
+  .pod-rectangle .col-md{
+    margin-right:0.83333em;
+  }
+  .first{
+    padding: 0;
+    margin:0;
+  }
+}  
+
+
